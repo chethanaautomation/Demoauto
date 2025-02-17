@@ -43,6 +43,7 @@ public class Steps {
 	public void user_should_be_see_my_profile() {
 	 boolean welcome=driver.findElement(By.xpath("//span[normalize-space()='My Profile']")).isDisplayed();
 	  Assert.assertEquals(welcome, true);
+	  driver.close();
 	  driver.quit();
 	}
 }
